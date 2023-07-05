@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+    <link rel="stylesheet" href="./pizza.css" />
+  </head>
+  <body>
+    <!-- ----------------------------navbar----------------------- -->
+    <header>
+      <a href="./pizza.html">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </header>
+    <main>
+      <!-- ----------------------pizza_photo------------------------ -->
+      <div class="pizza_container">
+        <div>
+          <h2>THIN</h2>
+          <h2>CRUST PİZZA</h2>
+          <button><a href="#menu_bar">LET ME SEE THE MENU</a></button>
+        </div>
+      </div>
+      <button class="click_off_button">OPEN FROM 10AM TO 12PM</button>
+      <!-- -----------------------------THE_MENU----------------------- -->
+      <section id="menu_bar">
+        <h1 id="menu">THE MENU</h1>
+        <div class="section_wrapper">
+          <div class="lists">
+            <p class="pizza">PIZZA</p>
+            <p>SALADS</p>
+            <p>STARTER</p>
+          </div>
+          <div class="about_pizza">
+            <div class="eats">
+              <p>MARGHERITA</p>
+              <button>$12.50</button>
+            </div>
+            <div class="text_eats">
+              <p>FRESH TOMATOES, FRESH MOZARELLA, FRESH BASIL</p>
+            </div>
+            <div class="eats">
+              <p>FORMAGGIO</p>
+              <button>$15.50</button>
+            </div>
+            <div class="text_eats">
+              <p>FOUR CHEESES (MOZZARELLA, PARMESAN, PECORINO, JARLSBERG)</p>
+            </div>
+            <div class="eats">
+              <p>CHICKEN</p>
+              <button>$17.00</button>
+            </div>
+            <div class="text_eats">
+              <p>FRESH TOMATOES, MOZARELLA, CHICKEN, ONIONS</p>
+            </div>
+            <div class="eats">
+              <p>Pineapple'o'clock</p>
+              <button>$16.50</button>
+            </div>
+            <div class="text_eats">
+              <p>
+                FRESH TOMATOES, MOZARELLA, FRESH PINEAPPLE, BACON, FRESH BASIL
+              </p>
+            </div>
+            <div class="eats">
+              <p>Meat Town <span>Hot!</span></p>
+              <button>$20.00</button>
+            </div>
+            <div class="text_eats">
+              <p>
+                FRESH TOMATOES, MOZARELLA, HOT PEPPORONI, HOT SAUSAGE,
+                BEEF,CHICKEN
+              </p>
+            </div>
+            <div class="eats">
+              <p>PARMA <b>NEW</b></p>
+              <button>$21.50</button>
+            </div>
+            <div class="text_eats bottom">
+              <p>FRESH TOMATOES, MOZARELLA, PARMA, BACON, FRESH ARUGULA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------------ABOUT--------------------------------- -->
+      <div id="about">
+        <p class="about_header">ABOUT</p>
+        <div class="about_wrapper">
+          <div class="about_child">
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="text_and_photo">
+              <div class="chef_texts">
+                <p><b>THE CHEF?</b>MR. ITALIANO HIMSELF</p>
+                <p>WE ARE PROUD OF OUR INTERIORS.</p>
+              </div>
+              <img src="./chef.jpg" alt="chef" />
+            </div>
+            <img src="./onepage_restaurant.jpg" alt="restaurant" width="100%" />
+            <div class="opening_hours">
+              <p class="opening_text">OPENING HOURS</p>
+              <div class="opening_hours_wrapper">
+                <p class="mon">Mon & Tue CLOSED</p>
+                <p class="wed">Wednesday 10.00 - 24.00</p>
+                <p class="thur">Thursday 10:00 - 24:00</p>
+                <p class="fri">Friday 10:00 - 12:00</p>
+                <p class="sat">Saturday 10:00 - 23:00</p>
+                <p class="sun">Sunday Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------map and footer-------------------------------- -->
+      <footer>
+        <img src="./map.jpg" alt="map" width="100%" />
+        <div class="contact_container">
+          <p id="contact">CONTACT</p>
+        </div>
+        <div class="contact_texts">
+          <p>
+            Find us at some address at some place or Call us at 05050515-122330
+          </p>
+          <p>
+            <b>FYI!</b>We offer full-service catering for any event, large or
+            small. We understand your needs and we will cater the food to
+            satisfy the biggerst criteria of them all, both look and taste.
+          </p>
+          <p>
+            <b>Reserve</b> a table, ask for today's special or just send us a
+            message:
+          </p>
+        </div>
+        <form>
+          <input type="text" required placeholder="Name" name="name" />
+          <br />
+          <br />
+          <input type="text" placeholder="How Many People" name="people" />
+          <br />
+          <br />
+          <input type="datetime-local" name="datetime" />
+          <br />
+          <br />
+          <input
+            type="text"
+            placeholder="Message/Special Requirements"
+            name="message"
+          />
+          <br />
+          <br />
+          <input
+            class="send_message"
+            type="submit"
+            value="Send Message"
+            name="send_message"
+          />
+          <br />
+          <br />
+        </form>
+      </footer>
+      <div class="last_container">
+        <p>
+          Powered by
+          <a
+            href="https://www.w3schools.com/w3css/tryw3css_templates_pizza.htm"
+            target="_blank"
+            >w3.css</a
+          >
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

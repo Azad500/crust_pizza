@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --white-text-color: rgba(255, 255, 255, 0.897);
+}
+
+body header {
+  display: none;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+body header:hover {
+  opacity: 1;
+}
+body header a:hover {
+  background-color: var(--white-text-color);
+  color: black;
+}
+body header a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white-text-color);
+  padding: 10px 15px;
+}
+body main .pizza_container {
+  position: relative;
+  min-height: 100vh;
+  background: url(./pizza.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .pizza_container div {
+  color: var(--white-text-color);
+  text-align: center;
+  background: none;
+}
+body main .pizza_container div h2 {
+  font-size: 40px;
+  padding: 20px;
+}
+body main .pizza_container div button {
+  background-color: black;
+  border: none;
+  margin-top: 15px;
+  padding: 20px;
+  cursor: pointer;
+}
+body main .pizza_container div button:hover {
+  background-color: gray;
+}
+body main .pizza_container div button a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--white-text-color);
+}
+body main .click_off_button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: black;
+  border: none;
+  margin-top: 15px;
+  padding: 15px;
+  color: var(--white-text-color);
+}
+body main section {
+  width: 100%;
+  background-color: black;
+  padding-bottom: 70px;
+}
+body main section h1 {
+  color: var(--white-text-color);
+  font-size: 30px;
+  text-align: center;
+  padding: 50px 0;
+}
+body main section .section_wrapper {
+  width: 90%;
+  background-color: white;
+  margin: auto;
+}
+body main section .section_wrapper .lists {
+  width: 100%;
+  display: flex;
+  border: 1px solid var(--white-text-color);
+  background-color: black;
+}
+body main section .section_wrapper .lists p {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  padding: 15px 0;
+  color: var(--white-text-color);
+  cursor: pointer;
+}
+body main section .section_wrapper .lists p:hover {
+  background-color: red;
+}
+body main section .section_wrapper .lists .pizza {
+  background-color: red;
+}
+body main section .section_wrapper .about_pizza {
+  width: 100%;
+  background-color: var(--white-text-color);
+}
+body main section .section_wrapper .about_pizza .eats {
+  margin: 20px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main section .section_wrapper .about_pizza .eats p {
+  font-size: 20px;
+}
+body main section .section_wrapper .about_pizza .eats p span {
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--white-text-color);
+}
+body main section .section_wrapper .about_pizza .eats p b {
+  background-color: rgb(94, 92, 92);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+body main section .section_wrapper .about_pizza .eats button {
+  font-size: 22px;
+  background-color: rgb(94, 92, 92);
+  border: none;
+  border-radius: 5px;
+  color: var(--white-text-color);
+  padding: 7px;
+}
+body main section .section_wrapper .about_pizza .text_eats {
+  margin: 15px 10px;
+  width: 93%;
+  border-bottom: 1px solid rgb(94, 92, 92);
+}
+body main section .section_wrapper .about_pizza .text_eats p {
+  padding: 20px 0;
+  color: rgb(94, 92, 92);
+  line-height: 35px;
+}
+body main section .section_wrapper .about_pizza .bottom {
+  border: none;
+}
+body main #about {
+  background-color: rgb(231, 174, 17);
+  padding-bottom: 50px;
+}
+body main #about .about_header {
+  text-align: center;
+  padding: 100px 0 20px 0;
+  font-size: 30px;
+  color: var(--white-text-color);
+}
+body main #about .about_wrapper {
+  width: 100%;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body main #about .about_wrapper .about_child {
+  width: 90%;
+  color: var(--white-text-color);
+  line-height: 25px;
+}
+body main #about .about_wrapper .about_child .text_and_photo {
+  margin: 20px 0 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main #about .about_wrapper .about_child .text_and_photo .chef_texts p:first-child {
+  margin-bottom: 20px;
+}
+body main #about .about_wrapper .about_child .text_and_photo img {
+  width: 150px;
+  border-radius: 50%;
+}
+body main #about .about_wrapper .about_child .opening_hours .opening_text {
+  font-size: 20px;
+}
+body main #about .about_wrapper .about_child .opening_hours .opening_hours_wrapper {
+  font-size: 15px;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "monday FF friday ZZ" "wednesday  FF saturday ZZ" "thursday FF sunday ZZ";
+  grid-template-columns: 150px 1fr 150px 1fr;
+  grid-template-rows: 50px 50px 50px;
+}
+body main #about .about_wrapper .about_child .opening_hours .opening_hours_wrapper .mon {
+  grid-area: monday;
+}
+body main #about .about_wrapper .about_child .opening_hours .opening_hours_wrapper .wed {
+  grid-area: wednesday;
+}
+body main #about .about_wrapper .about_child .opening_hours .opening_hours_wrapper .thur {
+  grid-area: thursday;
+}
+body main #about .about_wrapper .about_child .opening_hours .opening_hours_wrapper .fri {
+  grid-area: friday;
+}
+body main #about .about_wrapper .about_child .opening_hours .opening_hours_wrapper .sat {
+  grid-area: saturday;
+}
+body main #about .about_wrapper .about_child .opening_hours .opening_hours_wrapper .sun {
+  grid-area: sunday;
+}
+body main footer {
+  width: 100%;
+  background-color: rgb(11, 95, 121);
+  padding-bottom: 50px;
+}
+body main footer .contact_container {
+  text-align: center;
+  margin: 50px 0;
+}
+body main footer .contact_container p {
+  font-size: 30px;
+  color: var(--white-text-color);
+}
+body main footer .contact_texts {
+  margin: auto;
+  width: 90%;
+  color: var(--white-text-color);
+}
+body main footer .contact_texts p {
+  line-height: 25px;
+}
+body main footer .contact_texts p:nth-child(2) {
+  margin: 20px 0;
+}
+body main footer .contact_texts p:nth-child(2) b {
+  background-color: black;
+  padding: 5px;
+}
+body main footer .contact_texts p:nth-child(3) b {
+  font-size: 20px;
+}
+body main footer form {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+body main footer form input {
+  width: 100%;
+  padding: 20px 5px;
+  font-size: 15px;
+}
+body main footer form .send_message {
+  cursor: pointer;
+  padding: 15px 5px;
+}
+body main footer form .send_message:hover {
+  opacity: 0.9;
+}
+body main .last_container {
+  background-color: black;
+  color: var(--white-text-color);
+  text-align: center;
+  padding: 50px 0;
+  font-size: 20px;
+}
+body main .last_container p a {
+  color: var(--white-text-color);
+}
+
+@media screen and (min-width: 601px) {
+  body header {
+    display: block;
+  }
+  body main .pizza_container div h2 {
+    font-size: 60px;
+  }
+  body main #about .about_wrapper .about_child .opening_hours .opening_text {
+    font-size: 25px;
+  }
+  body main #about .about_wrapper .about_child .opening_hours .opening_hours_wrapper {
+    margin-top: 30px;
+    font-size: 18px;
+    grid-template-columns: 250px 1fr 250px 1fr;
+  }
+}/*# sourceMappingURL=pizza.css.map */
